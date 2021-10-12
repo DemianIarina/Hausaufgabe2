@@ -15,17 +15,22 @@ public class Benutzer {
 
     //die nötige Zeit für die Treibung aller seinen Lieblingssporte
     public double kalkuliereZeit(){
-        return 0;
+        double sum = 0;
+        for(Sport s : sport){
+            sum = sum+ s.kalkuliereZeit();
+        }
+        return sum;
     }
 
     //wie viel Zeit für eine Sportart gebraucht wird.
     public double kalkuliereZeit(Sport s){
-        return 0;
+        return s.kalkuliereZeit();
     }
 
     //wie lange er durchschnittlich für seinen Lieblingssport braucht
     public double kalkuliereDurchschnittsZeit(){
-        return 0;
+        double sum = kalkuliereZeit();
+        return sum/sport.size();
     }
 
     //getter & setters
