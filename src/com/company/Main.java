@@ -14,7 +14,7 @@ public class Main {
         Hochsprung ho1 = new Hochsprung();
         Hochsprung ho2 = new Hochsprung();
 
-        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;
+        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
         Benutzer ben1 = new Benutzer("Ion", "Pop", l );
 
         System.out.println(ben1.kalkuliereZeit());
