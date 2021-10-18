@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BenutzerTest {
 
-
     @Test
     void kalkuliereZeit() {
         Basketball b1 = new Basketball();
@@ -56,30 +55,5 @@ class BenutzerTest {
         Benutzer ben1 = new Benutzer("Ion", "Pop", l );
 
         assertEquals(ben1.kalkuliereDurchschnittsZeit(),40.833333333333336);
-    }
-
-    @Test
-    void getVorName() {
-
-    }
-
-    @Test
-    void setVorName() {
-    }
-
-    @Test
-    void getNachName() {
-    }
-
-    @Test
-    void setNachName() {
-    }
-
-    @Test
-    void getSport() {
-    }
-
-    @Test
-    void setSport() {
     }
 }
