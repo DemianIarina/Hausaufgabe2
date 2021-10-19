@@ -51,29 +51,49 @@ public class Benutzer {
     }
 
     /**
-     * getter & setters
+     * getter Vorname
+     * @return String
      */
-
     public String getVorName() {
         return vorName;
     }
 
+    /**
+     * setter Vorname
+     * @param vorName der Vorname der Benutzer
+     */
     public void setVorName(String vorName) {
         this.vorName = vorName;
     }
 
+    /**
+     * getter Nachname
+     * @return String
+     */
     public String getNachName() {
         return nachName;
     }
 
+    /**
+     * setter Nachname
+     * @param nachName der Nachname der Benutzer
+     */
     public void setNachName(String nachName) {
         this.nachName = nachName;
     }
 
+    /**
+     * getter List
+     * @return List
+     */
     public List<Sport> getSport() {
         return sport;
     }
 
+    /**
+     * setter List
+     * @param sport die liste der Sportarten gemacht von der Benutzer
+     */
     public void setSport(List<Sport> sport) {
         this.sport = sport;
     }
