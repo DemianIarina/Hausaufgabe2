@@ -13,27 +13,41 @@ public class Benutzer {
         this.sport = sport;
     }
 
-    //die nötige Zeit für die Treibung aller seinen Lieblingssporte
+    /**
+     * berechnung die nötige Zeit für
+     * die Treibung aller seinen Lieblingssporte
+     * @return double
+     */
     public double kalkuliereZeit(){
         double sum = 0;
         for(Sport s : sport){
-            sum = sum+ s.kalkuliereZeit();         //der Zeit fur jedes Sport wird zu der Summe addiert
+            sum = sum + s.kalkuliereZeit();         //der Zeit fur jedes Sport wird zu der Summe addiert
         }
         return sum;
     }
 
-    //wie viel Zeit für eine Sportart gebraucht wird.
+    /**
+     * wie viel Zeit für eine Sportart gebraucht wird
+     * @return double
+     */
     public double kalkuliereZeit(Sport s){
         return s.kalkuliereZeit();                  //kalkuliereZeit fur die entsprechende typ wird aufgerufen
     }
 
-    //wie lange er durchschnittlich für seinen Lieblingssport braucht
+    /**
+     * wie lange er durchschnittlich für seinen Lieblingssport braucht
+     * @return double
+     */
+
     public double kalkuliereDurchschnittsZeit(){
         double sum = kalkuliereZeit();
         return sum/sport.size();                    //teilen durch die Anzahl von ausgeübten Sportarten
     }
 
-    //getter & setters
+    /**
+     * getter & setters
+     */
+
     public String getVorName() {
         return vorName;
     }
