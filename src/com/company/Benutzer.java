@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.List;
 
+/**
+ * Benutzerklasse, jeder Obj hat Name, Vorname und
+ * eine Liste von Sportarten
+ * @author Demian Iarina
+ */
 public class Benutzer {
     private String vorName;
     private String nachName;
@@ -28,6 +33,7 @@ public class Benutzer {
 
     /**
      * wie viel Zeit für eine Sportart gebraucht wird
+     * @param s irgendeinem Sport von der Liste der Benutzer
      * @return double
      */
     public double kalkuliereZeit(Sport s){

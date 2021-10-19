@@ -17,8 +17,11 @@ public class Main {
         List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
         Benutzer ben1 = new Benutzer("Ion", "Pop", l );
 
+        System.out.print("Nötige Zeit für die Treibung aller seinen Lieblingssporte: ");
         System.out.println(ben1.kalkuliereZeit());
+        System.out.print("Nötige Zeit für eine Sportart gebraucht: ");
         System.out.println(ben1.kalkuliereZeit(hi1));
+        System.out.print("Durchschnittlich Zeit gebraucht: ");
         System.out.println(ben1.kalkuliereDurchschnittsZeit());
     }
 }
