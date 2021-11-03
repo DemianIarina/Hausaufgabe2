@@ -7,21 +7,21 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Basketball b1 = new Basketball();
-        Basketball b2 = new Basketball();
-        Fussball f1 = new Fussball();
-        Hindernislauf hi1 = new Hindernislauf();
-        Hochsprung ho1 = new Hochsprung();
-        Hochsprung ho2 = new Hochsprung();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Fussball fussball1 = new Fussball();
+        Hindernislauf hindernislauf1 = new Hindernislauf();
+        Hochsprung hochsprung1 = new Hochsprung();
+        Hochsprung hochsprung2 = new Hochsprung();
 
-        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
-        Benutzer ben1 = new Benutzer("Ion", "Pop", l );
+        List<Sport> sports= new ArrayList<>(Arrays.asList(basketball1,basketball2,fussball1,hindernislauf1,hochsprung1,hochsprung2)) ;  //man erstellt den array von Sports
+        Benutzer benutzer1 = new Benutzer("Ion", "Pop", sports );
 
         System.out.print("Nötige Zeit für die Treibung aller seinen Lieblingssporte: ");
-        System.out.println(ben1.kalkuliereZeit());
+        System.out.println(benutzer1.kalkuliereZeit());
         System.out.print("Nötige Zeit für eine Sportart gebraucht: ");
-        System.out.println(ben1.kalkuliereZeit(hi1));
+        System.out.println(benutzer1.kalkuliereZeit(hindernislauf1));
         System.out.print("Durchschnittlich Zeit gebraucht: ");
-        System.out.println(ben1.kalkuliereDurchschnittsZeit());
+        System.out.println(benutzer1.kalkuliereDurchschnittsZeit());
     }
 }

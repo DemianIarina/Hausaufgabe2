@@ -12,48 +12,48 @@ class BenutzerTest {
 
     @Test
     void kalkuliereZeit() {
-        Basketball b1 = new Basketball();
-        Basketball b2 = new Basketball();
-        Fussball f1 = new Fussball();
-        Hindernislauf hi1 = new Hindernislauf();
-        Hochsprung ho1 = new Hochsprung();
-        Hochsprung ho2 = new Hochsprung();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Fussball fussball1 = new Fussball();
+        Hindernislauf hindernislauf1 = new Hindernislauf();
+        Hochsprung hochsprung1 = new Hochsprung();
+        Hochsprung hochsprung2 = new Hochsprung();
 
-        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
-        Benutzer ben1 = new Benutzer("Ion", "Pop", l );
+        List<Sport> sports= new ArrayList<>(Arrays.asList(basketball1,basketball2,fussball1,hindernislauf1,hochsprung1,hochsprung2)) ;  //man erstellt den array von Sports
+        Benutzer benutzer1 = new Benutzer("Ion", "Pop", sports );
 
-        assertEquals(ben1.kalkuliereZeit(),245.0);
+        assertEquals(benutzer1.kalkuliereZeit(),245.0);
     }
 
     @Test
     void testKalkuliereZeit() {
-        Basketball b1 = new Basketball();
-        Basketball b2 = new Basketball();
-        Fussball f1 = new Fussball();
-        Hindernislauf hi1 = new Hindernislauf();
-        Hochsprung ho1 = new Hochsprung();
-        Hochsprung ho2 = new Hochsprung();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Fussball fussball1 = new Fussball();
+        Hindernislauf hindernislauf1 = new Hindernislauf();
+        Hochsprung hochsprung1 = new Hochsprung();
+        Hochsprung hochsprung2 = new Hochsprung();
 
-        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
-        Benutzer ben1 = new Benutzer("Ion", "Pop", l );
+        List<Sport> sports= new ArrayList<>(Arrays.asList(basketball1,basketball2,fussball1,hindernislauf1,hochsprung1,hochsprung2)) ;  //man erstellt den array von Sports
+        Benutzer benutzer1 = new Benutzer("Ion", "Pop", sports );
 
-        assertEquals(ben1.kalkuliereZeit(ho2),20);
-        assertEquals(ben1.kalkuliereZeit(b1),55);
-        assertEquals(ben1.kalkuliereZeit(hi1),30);
+        assertEquals(benutzer1.kalkuliereZeit(hochsprung1),20);
+        assertEquals(benutzer1.kalkuliereZeit(basketball1),55);
+        assertEquals(benutzer1.kalkuliereZeit(hindernislauf1),30);
     }
 
     @Test
     void kalkuliereDurchschnittsZeit() {
-        Basketball b1 = new Basketball();
-        Basketball b2 = new Basketball();
-        Fussball f1 = new Fussball();
-        Hindernislauf hi1 = new Hindernislauf();
-        Hochsprung ho1 = new Hochsprung();
-        Hochsprung ho2 = new Hochsprung();
+        Basketball basketball1 = new Basketball();
+        Basketball basketball2 = new Basketball();
+        Fussball fussball1 = new Fussball();
+        Hindernislauf hindernislauf1 = new Hindernislauf();
+        Hochsprung hochsprung1 = new Hochsprung();
+        Hochsprung hochsprung2 = new Hochsprung();
 
-        List<Sport> l= new ArrayList<>(Arrays.asList(b1,b2,f1,hi1,ho1,ho2)) ;  //man erstellt den array von Sports
-        Benutzer ben1 = new Benutzer("Ion", "Pop", l );
+        List<Sport> sports= new ArrayList<>(Arrays.asList(basketball1,basketball2,fussball1,hindernislauf1,hochsprung1,hochsprung2)) ;  //man erstellt den array von Sports
+        Benutzer benutzer1 = new Benutzer("Ion", "Pop", sports );
 
-        assertEquals(ben1.kalkuliereDurchschnittsZeit(),40.833333333333336);
+        assertEquals(benutzer1.kalkuliereDurchschnittsZeit(),40.833333333333336);
     }
 }
